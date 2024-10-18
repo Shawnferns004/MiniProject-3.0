@@ -10,7 +10,7 @@ export const getFeatureImages = createAsyncThunk(
   "/order/getFeatureImages",
   async () => {
     const response = await axios.get(
-      `https://miniproject-3-0-3.onrender.com/api/common/feature/get`
+      `https://miniproject-3-0-5.onrender.com/api/common/feature/get`
     );
 
     return response.data;
@@ -21,7 +21,7 @@ export const addFeatureImage = createAsyncThunk(
   "/order/addFeatureImage",
   async (image) => {
     const response = await axios.post(
-      `https://miniproject-3-0-3.onrender.com/api/common/feature/add`,
+      `https://miniproject-3-0-5.onrender.com/api/common/feature/add`,
       { image }
     );
 
