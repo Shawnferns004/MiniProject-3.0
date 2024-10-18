@@ -37,13 +37,6 @@ app.use(
   cors({
     origin: "https://resilient-profiterole-5dfdab.netlify.app/",
     methods: ["GET", "POST", "DELETE", "PUT"],
-    allowedHeaders: [
-      "Content-Type",
-      "Authorization",
-      "Cache-Control",
-      "Expires",
-      "Pragma",
-    ],
     credentials: true,
   })
 );
