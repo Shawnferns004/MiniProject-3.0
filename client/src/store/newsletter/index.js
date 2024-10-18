@@ -13,7 +13,7 @@ export const subscribe = createAsyncThunk(
   'subscription/subscribe',
   async (email, { rejectWithValue }) => {
     try {
-      const response = await fetch('https://miniproject-3-0-3.onrender.comapi/subscribe', {
+      const response = await fetch('https://miniproject-3-0-3.onrender.com/api/subscribe', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
