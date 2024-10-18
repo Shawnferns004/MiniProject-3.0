@@ -4,7 +4,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 export const submitContactForm = createAsyncThunk(
   'contact/submit',
   async (formData) => {
-    const response = await fetch('http://localhost:5000/api/contact/send', {
+    const response = await fetch('https://miniproject-3-0-3.onrender.comapi/contact/send', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
