@@ -3,20 +3,16 @@
     "name": "my-node-app",
     "builds": [
       {
-        "src": "api/server.js",
+        "src": "server.js",
         "use": "@vercel/node"
       }
     ],
     "routes": [
-      {
-        "src": "/",
-        "dest": "/index.html"
-      },
-      {
-        "src": "/api/(.*)",
-        "dest": "/api/server.js"
-      }
-    ],
+    {
+      "src": "/api/(.*)",
+      "dest": "/server.js"
+    }  
+  ],
     "env": {
       "DATABASE_URL": "mongodb+srv://shawnferns004:eljita0301@cluster0.3vevy.mongodb.net/trendify",
       "CLOUDINARY_API_KEY": "311512874174731",
