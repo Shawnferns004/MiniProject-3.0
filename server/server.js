@@ -35,7 +35,7 @@ const PORT = process.env.PORT || 4002;
 
 app.use(
   cors({
-    origin: "https://resilient-profiterole-5dfdab.netlify.app/",
+    origin: "https://trendify-rent-the-trend.netlify.app",
     methods: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
   })
